@@ -13,33 +13,43 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="來源檔案\Player">
-      <UniqueIdentifier>{bb3be2bb-fbb8-4d06-bd98-fa0d84983746}</UniqueIdentifier>
-    </Filter>
     <Filter Include="來源檔案\State">
       <UniqueIdentifier>{ea0843d0-24c8-48ce-ba03-e233c904735b}</UniqueIdentifier>
     </Filter>
     <Filter Include="標頭檔\State">
       <UniqueIdentifier>{5273a41f-60ce-4ffe-9a5b-be3802ff992d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="來源檔案\Creature">
+      <UniqueIdentifier>{5e4fcf51-3cc2-42eb-bfed-e2902b43a934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\Creature\Player">
+      <UniqueIdentifier>{8f31bc53-7e8c-4c67-ad3d-eac30a0c6df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Creature">
+      <UniqueIdentifier>{2b8af6c7-521c-4c10-9957-cf14a594da09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Creature\Player">
+      <UniqueIdentifier>{49d1fa3a-3ea1-424a-a92c-1ce4f7c6f4b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IgsRpgPractice.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
-    <ClCompile Include="Player\CharacterParent.cpp">
-      <Filter>來源檔案\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="State\StateMachine.cpp">
-      <Filter>來源檔案\State</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Player\CharacterParent.h">
-      <Filter>來源檔案\Player</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="IgsRpgPractice.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="State\PlayerStatus.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\PlayerStep.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\SelectRole.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\StateMachine.h">
+      <Filter>標頭檔\State</Filter>
     </ClInclude>
     <ClInclude Include="State\ExitState.h">
       <Filter>標頭檔\State</Filter>
@@ -50,25 +60,48 @@
     <ClInclude Include="State\PageState.h">
       <Filter>標頭檔\State</Filter>
     </ClInclude>
-    <ClInclude Include="State\PlayerStatus.h">
-      <Filter>標頭檔\State</Filter>
+    <ClInclude Include="Creature\CreatureParent.h">
+      <Filter>標頭檔\Creature</Filter>
     </ClInclude>
-    <ClInclude Include="State\PlayerStep.h">
-      <Filter>標頭檔\State</Filter>
+    <ClInclude Include="Creature\Player\RoleParent.h">
+      <Filter>標頭檔\Creature\Player</Filter>
     </ClInclude>
-    <ClInclude Include="State\StateMachine.h">
-      <Filter>標頭檔\State</Filter>
+    <ClInclude Include="Creature\Player\Warrior.h">
+      <Filter>標頭檔\Creature\Player</Filter>
     </ClInclude>
-    <ClInclude Include="State\SelectRole.h">
-      <Filter>標頭檔\State</Filter>
+    <ClInclude Include="Creature\Player\Mage.h">
+      <Filter>標頭檔\Creature\Player</Filter>
     </ClInclude>
-    <ClInclude Include="IgsRpgPractice.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="Creature\Player\PlayerController.h">
+      <Filter>標頭檔\Creature\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IgsRpgPractice.rc">
       <Filter>資源檔</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IgsRpgPractice.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="State\StateMachine.cpp">
+      <Filter>來源檔案\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\CreatureParent.cpp">
+      <Filter>來源檔案\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Player\PlayerController.cpp">
+      <Filter>來源檔案\Creature\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Player\RoleParent.cpp">
+      <Filter>來源檔案\Creature\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Player\Warrior.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Player\Mage.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

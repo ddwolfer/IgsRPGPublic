@@ -139,13 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="IgsRpgPractice.cpp" />
-    <ClCompile Include="Player\CharacterParent.cpp" />
-    <ClCompile Include="State\StateMachine.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Creature\CreatureParent.h" />
+    <ClInclude Include="Creature\Player\Mage.h" />
+    <ClInclude Include="Creature\Player\PlayerController.h" />
+    <ClInclude Include="Creature\Player\RoleParent.h" />
+    <ClInclude Include="Creature\Player\Warrior.h" />
     <ClInclude Include="IgsRpgPractice.h" />
-    <ClInclude Include="Player\CharacterParent.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="State\ExitState.h" />
     <ClInclude Include="State\MenuState.h" />
@@ -157,6 +156,15 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IgsRpgPractice.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Creature\CreatureParent.cpp" />
+    <ClCompile Include="Creature\Player\Mage.cpp" />
+    <ClCompile Include="Creature\Player\PlayerController.cpp" />
+    <ClCompile Include="Creature\Player\RoleParent.cpp" />
+    <ClCompile Include="Creature\Player\Warrior.cpp" />
+    <ClCompile Include="IgsRpgPractice.cpp" />
+    <ClCompile Include="State\StateMachine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

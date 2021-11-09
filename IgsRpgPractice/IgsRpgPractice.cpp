@@ -3,6 +3,9 @@
 
 #include "IgsRpgPractice.h"
 
+
+
+
 int main()
 {
 	StateMachine*		pageStateMachine= new StateMachine();

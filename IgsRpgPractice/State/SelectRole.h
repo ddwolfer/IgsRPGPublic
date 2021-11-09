@@ -1,6 +1,14 @@
 #ifndef _SELECT_ROLE_
 #define _SELECT_ROLE_
 #include "StateMachine.h"
+#include "../Creature/Player/PlayerController.h"
+
+enum E_ChooseRole
+{
+	Type_Warrior = 1,
+	Type_Mage = 2
+};
+
 //
 // 選擇角色 
 // 1) 戰士 
@@ -19,14 +27,16 @@ public:
 		cin >> choose;
 		switch (choose) {
 			// (1)戰士 
-		case 1:
+		case Type_Warrior:
+			PlayerController::SetPlayer(new Warrior());
 			StateMachine::GetStateMachine()->Change(E_GamePage::playerStep);
 			break;
 			// (2)法師
-		case 2:
+		case Type_Mage:
+			PlayerController::SetPlayer(new Mage());
 			StateMachine::GetStateMachine()->Change(E_GamePage::playerStep);
+			
 			break;
-
 		default:
 			cout << "錯誤輸入!" << endl;
 			break;

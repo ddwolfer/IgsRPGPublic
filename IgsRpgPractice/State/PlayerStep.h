@@ -11,7 +11,7 @@ class PlayerStep : public EmptyState
 {
 public:
 	void Update() {
-		cout << "[----------呃 先這樣----------]" << endl;
+		cout << "[----------決定下一步----------]" << endl;
 		cout << "(1)前進" << endl;
 		cout << "(2)角色狀態" << endl;
 	}
