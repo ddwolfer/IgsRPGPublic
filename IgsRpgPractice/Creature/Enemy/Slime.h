@@ -5,7 +5,7 @@
 
 namespace defaultSlime {
 	const string	name = "¥vµÜ©i";
-	const int		hpMax = 20;
+	const int		hpMax = 10;
 	const int		manaMax = 0;
 	const int		atk = 5;
 	const int		speed = 5;

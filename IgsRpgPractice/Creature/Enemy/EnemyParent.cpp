@@ -11,3 +11,7 @@ EnemyParent::EnemyParent(
 EnemyParent::~EnemyParent()
 {
 }
+void EnemyParent::ShowEnemyHp() {
+	cout << m_name << " : " << GetHp() <<endl;
+	return;
+}

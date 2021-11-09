@@ -2,10 +2,15 @@
 #define _ENEMY_PARENT_
 
 #include "../CreatureParent.h"
+#include <iostream>
+
+using namespace std;
 
 class EnemyParent : public CreatureParent
 {
 public:
+	void ShowEnemyHp();
+
 	EnemyParent(
 		string inputName = "defaultName",
 		int inputHp		 = 1,

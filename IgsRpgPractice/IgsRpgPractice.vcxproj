@@ -143,6 +143,7 @@
     <ClInclude Include="Creature\CreatureParent.h" />
     <ClInclude Include="Creature\Enemy\EnemyController.h" />
     <ClInclude Include="Creature\Enemy\EnemyParent.h" />
+    <ClInclude Include="Creature\Enemy\Goblin.h" />
     <ClInclude Include="Creature\Enemy\Slime.h" />
     <ClInclude Include="Creature\Player\Mage.h" />
     <ClInclude Include="Creature\Player\PlayerController.h" />
@@ -165,7 +166,9 @@
   <ItemGroup>
     <ClCompile Include="BattleController.cpp" />
     <ClCompile Include="Creature\CreatureParent.cpp" />
+    <ClCompile Include="Creature\Enemy\EnemyController.cpp" />
     <ClCompile Include="Creature\Enemy\EnemyParent.cpp" />
+    <ClCompile Include="Creature\Enemy\Goblin.cpp" />
     <ClCompile Include="Creature\Enemy\Slime.cpp" />
     <ClCompile Include="Creature\Player\Mage.cpp" />
     <ClCompile Include="Creature\Player\PlayerController.cpp" />

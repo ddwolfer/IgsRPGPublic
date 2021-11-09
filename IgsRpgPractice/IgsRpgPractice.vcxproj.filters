@@ -90,6 +90,9 @@
     <ClInclude Include="BattleController.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="Creature\Enemy\Goblin.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IgsRpgPractice.rc">
@@ -125,6 +128,12 @@
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="Creature\Enemy\Slime.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Enemy\EnemyController.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Enemy\Goblin.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>

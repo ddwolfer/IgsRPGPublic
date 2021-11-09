@@ -5,6 +5,8 @@
 
 int main()
 {
+	srand(time(0));
+
 	StateMachine*		pageStateMachine= new StateMachine();
 
 	ExitState*			exitState		= new ExitState();
