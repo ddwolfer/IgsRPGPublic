@@ -4,7 +4,7 @@
 #include "EnemyParent.h"
 
 namespace defaultGoblin {
-	const string	name = "­ô¨BªL";
+	const string	name = "­ô¥¬ªL";
 	const int		hpMax = 30;
 	const int		manaMax = 0;
 	const int		atk = 10;
