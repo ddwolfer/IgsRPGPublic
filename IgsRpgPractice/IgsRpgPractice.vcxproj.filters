@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="來源檔案\Player">
+      <UniqueIdentifier>{bb3be2bb-fbb8-4d06-bd98-fa0d84983746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\State">
+      <UniqueIdentifier>{ea0843d0-24c8-48ce-ba03-e233c904735b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\State">
+      <UniqueIdentifier>{5273a41f-60ce-4ffe-9a5b-be3802ff992d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IgsRpgPractice.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\CharacterParent.cpp">
+      <Filter>來源檔案\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="State\StateMachine.cpp">
+      <Filter>來源檔案\State</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player\CharacterParent.h">
+      <Filter>來源檔案\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="State\ExitState.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\MenuState.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\PageState.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\PlayerStatus.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\PlayerStep.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\StateMachine.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\SelectRole.h">
+      <Filter>標頭檔\State</Filter>
+    </ClInclude>
+    <ClInclude Include="IgsRpgPractice.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IgsRpgPractice.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
