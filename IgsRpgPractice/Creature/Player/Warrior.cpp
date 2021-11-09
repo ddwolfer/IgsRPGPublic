@@ -2,11 +2,11 @@
 
 Warrior::Warrior() :
 	RoleParent(
-		defaultWarrior::m_name,
-		defaultWarrior::HpMax,
-		defaultWarrior::ManaMax,
-		defaultWarrior::Atk,
-		defaultWarrior::Speed
+		defaultWarrior::name,
+		defaultWarrior::hpMax,
+		defaultWarrior::manaMax,
+		defaultWarrior::atk,
+		defaultWarrior::speed
 	) {
 }
 Warrior::~Warrior() {

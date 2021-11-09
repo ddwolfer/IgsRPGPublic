@@ -2,7 +2,7 @@
 #define _MENU_STATE_
 
 #include "StateMachine.h"
-enum E_ChooseRole
+enum E_MenuSelect
 {
 	State_Start = 1,
 	State_Exit = 2

@@ -6,5 +6,6 @@
 #include "PlayerStep.h"
 #include "SelectRole.h"
 #include "PlayerStatus.h"
+#include "BattlePhase.h"
 
 #endif // !_PAGE_STATE_

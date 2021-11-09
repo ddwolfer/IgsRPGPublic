@@ -75,6 +75,21 @@
     <ClInclude Include="Creature\Player\PlayerController.h">
       <Filter>標頭檔\Creature\Player</Filter>
     </ClInclude>
+    <ClInclude Include="State\BattlePhase.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature\Enemy\EnemyParent.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature\Enemy\Slime.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature\Enemy\EnemyController.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleController.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IgsRpgPractice.rc">
@@ -101,6 +116,15 @@
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="Creature\Player\Mage.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Enemy\EnemyParent.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleController.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature\Enemy\Slime.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>

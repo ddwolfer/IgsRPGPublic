@@ -3,23 +3,23 @@
 
 #include "IgsRpgPractice.h"
 
-
-
-
 int main()
 {
 	StateMachine*		pageStateMachine= new StateMachine();
+
 	ExitState*			exitState		= new ExitState();
 	MenuState*			menuState		= new MenuState();
 	SelectRole*			selectRole		= new SelectRole();
 	PlayerStep*			playerStep		= new PlayerStep();
 	PlayerStatus*		playerStatus	= new PlayerStatus();
+	BattlePhase*		battleState		= new BattlePhase();
 
 	pageStateMachine->AddState(E_GamePage::exit, exitState);
 	pageStateMachine->AddState(E_GamePage::mainMenu, menuState);
 	pageStateMachine->AddState(E_GamePage::selectRole, selectRole);
 	pageStateMachine->AddState(E_GamePage::playerStep, playerStep);
 	pageStateMachine->AddState(E_GamePage::playerStatus, playerStatus);
+	pageStateMachine->AddState(E_GamePage::battle, battleState);
 
 	pageStateMachine->Change(E_GamePage::mainMenu);
 
@@ -29,7 +29,6 @@ int main()
 		pageStateMachine->Update();
 		pageStateMachine->HandleInput();
 	}
-
 
     return 0;
 }

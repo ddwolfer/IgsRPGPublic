@@ -4,11 +4,11 @@
 #include "RoleParent.h"
 
 namespace defaultMage {
-	const string	m_name = "法師";
-	const int		HpMax = 65;
-	const int		ManaMax = 75;
-	const int		Atk = 10;
-	const int		Speed = 12;
+	const string	name = "法師";
+	const int		hpMax = 65;
+	const int		manaMax = 75;
+	const int		atk = 10;
+	const int		speed = 12;
 }
 
 class Mage : public RoleParent {

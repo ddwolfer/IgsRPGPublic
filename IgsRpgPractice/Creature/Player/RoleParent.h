@@ -19,7 +19,7 @@ public:
 	virtual void ShowStatus();
 
 	RoleParent(
-		string inputName = "Name",
+		string inputName = "defaultName",
 		int inputHp		= 1,
 		int inputMana	= 1,
 		int inputAtk	= 1,

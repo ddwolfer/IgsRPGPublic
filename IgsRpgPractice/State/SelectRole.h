@@ -8,12 +8,12 @@ enum E_ChooseRole
 	Type_Warrior = 1,
 	Type_Mage = 2
 };
-
 //
 // 選擇角色 
 // 1) 戰士 
 // 2) 法師
 //
+
 class SelectRole : public EmptyState
 {
 public:
@@ -35,7 +35,6 @@ public:
 		case Type_Mage:
 			PlayerController::SetPlayer(new Mage());
 			StateMachine::GetStateMachine()->Change(E_GamePage::playerStep);
-			
 			break;
 		default:
 			cout << "錯誤輸入!" << endl;

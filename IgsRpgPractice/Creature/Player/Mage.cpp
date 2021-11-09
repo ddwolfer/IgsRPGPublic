@@ -2,11 +2,11 @@
 
 Mage::Mage() :
 	RoleParent(
-		defaultMage::m_name,
-		defaultMage::HpMax,
-		defaultMage::ManaMax,
-		defaultMage::Atk,
-		defaultMage::Speed
+		defaultMage::name,
+		defaultMage::hpMax,
+		defaultMage::manaMax,
+		defaultMage::atk,
+		defaultMage::speed
 	) {
 }
 Mage::~Mage() {

@@ -8,9 +8,7 @@
 class ExitState : public EmptyState
 {
 public:
-	void Update() {
-		exit(1);
-	}
+	void Update() { exit(1);}
 	void HandleInput() {}
 	void Enter() {}
 	void Exit() {}

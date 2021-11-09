@@ -21,7 +21,7 @@ public:
 		switch (choose) {
 			// (1)前進 
 		case 1:
-			cout << "還沒做" << endl;
+			StateMachine::GetStateMachine()->Change(E_GamePage::battle);
 			break;
 			// (2)看角色狀態欄位
 		case 2:

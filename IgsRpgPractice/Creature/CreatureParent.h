@@ -8,6 +8,21 @@ using namespace std;
 
 class CreatureParent
 {
+//public:
+//	enum State_Battle {
+//		idle,
+//		atk,
+//		escape
+//	};
+
+
+	//
+	// function ¾Ô°«°Ê§@
+	//
+	// battleAction(
+	//	
+	// )
+	//
 public:
 	int GetHp()			{ return m_Hp; }
 	int GetHpMax()		{ return m_HpMax; }

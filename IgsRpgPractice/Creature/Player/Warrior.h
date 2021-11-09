@@ -4,11 +4,11 @@
 #include "RoleParent.h"
 
 namespace defaultWarrior {
-	const string	m_name = "戰士";
-	const int		HpMax = 100;
-	const int		ManaMax = 20;
-	const int		Atk = 25;
-	const int		Speed = 10;
+	const string	name = "戰士";
+	const int		hpMax = 100;
+	const int		manaMax = 20;
+	const int		atk = 25;
+	const int		speed = 10;
 }
 
 class Warrior : public RoleParent {

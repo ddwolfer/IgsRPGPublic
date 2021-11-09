@@ -139,13 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BattleController.h" />
     <ClInclude Include="Creature\CreatureParent.h" />
+    <ClInclude Include="Creature\Enemy\EnemyController.h" />
+    <ClInclude Include="Creature\Enemy\EnemyParent.h" />
+    <ClInclude Include="Creature\Enemy\Slime.h" />
     <ClInclude Include="Creature\Player\Mage.h" />
     <ClInclude Include="Creature\Player\PlayerController.h" />
     <ClInclude Include="Creature\Player\RoleParent.h" />
     <ClInclude Include="Creature\Player\Warrior.h" />
     <ClInclude Include="IgsRpgPractice.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="State\BattlePhase.h" />
     <ClInclude Include="State\ExitState.h" />
     <ClInclude Include="State\MenuState.h" />
     <ClInclude Include="State\PageState.h" />
@@ -158,7 +163,10 @@
     <ResourceCompile Include="IgsRpgPractice.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleController.cpp" />
     <ClCompile Include="Creature\CreatureParent.cpp" />
+    <ClCompile Include="Creature\Enemy\EnemyParent.cpp" />
+    <ClCompile Include="Creature\Enemy\Slime.cpp" />
     <ClCompile Include="Creature\Player\Mage.cpp" />
     <ClCompile Include="Creature\Player\PlayerController.cpp" />
     <ClCompile Include="Creature\Player\RoleParent.cpp" />
