@@ -2,6 +2,11 @@
 #define _PLAYER_STEP_
 #include "StateMachine.h"
 
+enum E_StepChoose {
+	State_nextBattle = 1,
+	State_showPlayerStatus = 2
+};
+
 //
 // 遊戲階段 
 // 1) 前進(戰鬥) 
@@ -10,28 +15,14 @@
 class PlayerStep : public EmptyState
 {
 public:
-	void Update() {
-		cout << "[----------決定下一步----------]" << endl;
-		cout << "(1)前進" << endl;
-		cout << "(2)角色狀態" << endl;
-	}
-	void HandleInput() {
-		int choose;
-		cin >> choose;
-		switch (choose) {
-			// (1)前進 
-		case 1:
-			StateMachine::GetStateMachine()->Change(E_GamePage::battle);
-			break;
-			// (2)看角色狀態欄位
-		case 2:
-			StateMachine::GetStateMachine()->Change(E_GamePage::playerStatus);
-			break;
-		default:
-			cout << "錯誤輸入!" << endl;
-			break;
-		}
-	}
+	//
+	// 顯示選擇畫面
+	//
+	void Update();
+	//
+	// 選擇並動作
+	//
+	void HandleInput();
 	void Enter() {}
 	void Exit() {}
 

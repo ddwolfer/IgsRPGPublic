@@ -136,5 +136,20 @@
     <ClCompile Include="Creature\Enemy\Goblin.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="State\BattlePhase.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="State\MenuState.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="State\PlayerStatus.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="State\PlayerStep.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="State\SelectRole.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

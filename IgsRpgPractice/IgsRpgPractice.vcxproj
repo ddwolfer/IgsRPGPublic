@@ -175,6 +175,11 @@
     <ClCompile Include="Creature\Player\RoleParent.cpp" />
     <ClCompile Include="Creature\Player\Warrior.cpp" />
     <ClCompile Include="IgsRpgPractice.cpp" />
+    <ClCompile Include="State\BattlePhase.cpp" />
+    <ClCompile Include="State\MenuState.cpp" />
+    <ClCompile Include="State\PlayerStatus.cpp" />
+    <ClCompile Include="State\PlayerStep.cpp" />
+    <ClCompile Include="State\SelectRole.cpp" />
     <ClCompile Include="State\StateMachine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

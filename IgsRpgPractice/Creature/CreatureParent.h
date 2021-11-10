@@ -1,28 +1,24 @@
 #ifndef _CREATURE_
 #define _CREATURE_
 
-
 #include <string>
+#include <iostream>
 
 using namespace std;
 
+enum class E_BattleAction {
+	State_Idle = 0,
+	State_normalAttaack = 1,
+	State_specialAttack = 2,
+	State_escape = 3
+};
+enum E_BattleEscape {
+	Escape_Success = 0,
+	Escape_Fail = 1
+};
+
 class CreatureParent
 {
-//public:
-//	enum State_Battle {
-//		idle,
-//		atk,
-//		escape
-//	};
-
-
-	//
-	// function 戰鬥動作
-	//
-	// battleAction(
-	//	
-	// )
-	//
 public:
 	int GetHp()			{ return m_Hp; }
 	int GetHpMax()		{ return m_HpMax; }
@@ -31,6 +27,7 @@ public:
 	int GetAtk()		{ return m_Atk; }
 	int GetSpeed()		{ return m_Speed; }
 	string GetName()    { return m_name; }
+	E_BattleAction GetBattleAction() { return m_battleAction; }
 
 	void SetHp(int inputHp)				{ m_Hp = inputHp; }
 	void SetHpMax(int inputHpM)			{ m_HpMax = inputHpM; }
@@ -39,6 +36,17 @@ public:
 	void SetAtk(int inputAtk)			{ m_Atk = inputAtk; }
 	void SetSpeed(int inputSpeed)		{ m_Speed = inputSpeed; }
 	void SetRoleName(string inputName)	{ m_name = inputName; }
+	void SetBattleAction(E_BattleAction inputAction) { m_battleAction = inputAction; }
+
+	//
+	// 顯示 名字+Hp/HpMax
+	//
+	void ShowNameHp();
+	//
+	// 攻擊用Function
+	//
+	void OnHit(int getDamage); // 被攻擊 
+	void NormalAttackHit(CreatureParent* attackTarget); // 普通攻擊目標
 
 	CreatureParent(
 		string inputName,
@@ -57,8 +65,6 @@ protected:
 	int m_Mana;
 	int m_Atk;
 	int m_Speed;
-
+	E_BattleAction m_battleAction;
 };
-
-
 #endif

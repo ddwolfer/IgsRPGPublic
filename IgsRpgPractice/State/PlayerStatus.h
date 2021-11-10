@@ -13,18 +13,8 @@ using namespace std;
 class PlayerStatus : public EmptyState
 {
 public:
-	void Update() {
-		cout << "[----------角色狀態----------]" << endl;
-		PlayerController::GetPlayer()->ShowStatus();
-		cout << "(任意鍵返回)" << endl;
-
-	}
-	void HandleInput() {
-		int choose;
-		cin >> choose;
-		StateMachine::GetStateMachine()->Change(E_GamePage::playerStep);
-	}
-
+	void Update();		// 顯示角色狀態
+	void HandleInput(); // 按下任意key返回
 	void Enter() {}
 	void Exit() {}
 

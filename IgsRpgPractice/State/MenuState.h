@@ -16,32 +16,9 @@ enum E_MenuSelect
 class MenuState : public EmptyState
 {
 public:
-	void Update() {
-		cout << "[----------Menu----------]" << endl;
-		cout << "(1)開始遊戲" << endl;
-		cout << "(2)退出" << endl;
-	}
-	void HandleInput() {
-		int choose;
-		cin >> choose;
-		switch (choose) {
-			// (1)開始遊戲 
-		case State_Start:
-			StateMachine::GetStateMachine()->Change(E_GamePage::selectRole);
-			break;
-			// (2)退出
-		case State_Exit:
-			StateMachine::GetStateMachine()->Change(E_GamePage::exit);
-			break;
-
-		default:
-			cout << "錯誤輸入!" << endl;
-			break;
-		}
-	}
-	void Enter() {
-
-	}
+	void Update();		// 顯示主頁面畫面
+	void HandleInput(); // 輸入並跳轉頁面
+	void Enter() {}
 	void Exit() {}
 
 	MenuState() {}
