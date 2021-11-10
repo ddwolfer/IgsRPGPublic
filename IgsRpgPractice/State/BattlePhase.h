@@ -2,14 +2,11 @@
 #define _BATTLE_PHASE_
 
 #include "StateMachine.h"
-#include "../Creature/Enemy/EnemyController.h"
-#include "../Creature/Player/PlayerController.h"
 #include "../BattleController.h"
 #include "../State/StateMachine.h"
 #include <list>
 #include <random>
 #include <time.h>
-
 
 //
 // ¾Ô°«¶¥¬q
@@ -28,13 +25,9 @@ public:
 	//
 	void Enter(); 
 	void Exit() {}
-	BattlePhase():m_battleEndFlag(false){}
+	BattlePhase() {}
 	~BattlePhase() {}
 
 private:
-	bool							m_battleEndFlag;
-	EnemyController					m_enemyController;
-	std::vector<EnemyParent*>		m_enemyVec;
-	std::vector<CreatureParent*>	m_attackSort;
 };
 #endif // !_BATTLE_PHASE_

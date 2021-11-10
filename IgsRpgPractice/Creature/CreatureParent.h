@@ -7,7 +7,7 @@
 using namespace std;
 
 enum class E_BattleAction {
-	State_Idle = 0,
+	State_idle = 0,
 	State_normalAttaack = 1,
 	State_specialAttack = 2,
 	State_escape = 3
@@ -43,10 +43,12 @@ public:
 	//
 	void ShowNameHp();
 	//
-	// 攻擊用Function
+	// 戰鬥階段用Function
 	//
+	void ActionIdle();	// 閒置不動作
 	void OnHit(int getDamage); // 被攻擊 
 	void NormalAttackHit(CreatureParent* attackTarget); // 普通攻擊目標
+
 
 	CreatureParent(
 		string inputName,

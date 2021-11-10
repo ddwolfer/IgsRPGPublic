@@ -1,5 +1,11 @@
 #include "CreatureParent.h"
 //
+// 閒置不動作
+// 
+void CreatureParent::ActionIdle() {
+	cout << m_name << "\t這回合不動作." << endl;
+}
+//
 // 被攻擊 
 //
 void CreatureParent::OnHit(int getDamage) {
@@ -33,7 +39,7 @@ CreatureParent::CreatureParent(
 	m_ManaMax(inputMana),
 	m_Atk(inputAtk),
 	m_Speed(inputSpeed),
-	m_battleAction(E_BattleAction::State_Idle){}
+	m_battleAction(E_BattleAction::State_idle){}
 
 CreatureParent::~CreatureParent()
 {

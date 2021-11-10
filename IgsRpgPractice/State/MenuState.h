@@ -7,7 +7,6 @@ enum E_MenuSelect
 	State_Start = 1,
 	State_Exit = 2
 };
-
 //
 // 主頁面 
 // (1)開始遊戲 

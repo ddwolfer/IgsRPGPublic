@@ -3,6 +3,7 @@
 
 #include "../CreatureParent.h"
 #include <iostream>
+#include <map>
 
 using namespace std;
 
@@ -18,8 +19,11 @@ public:
 	);
 	~EnemyParent();
 
-private:
+	static void ResetCountMap();
+	static int AddEnemyInCountMap(string inputName);
 
+protected:
+	static map<string, int> m_countEachTypeEnemy;
 };
 
 

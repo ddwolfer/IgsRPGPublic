@@ -5,7 +5,7 @@
 
 namespace defaultMage {
 	const string	name = "ªk®v";
-	const int		hpMax = 65;
+	const int		hpMax = 1;
 	const int		manaMax = 75;
 	const int		atk = 10;
 	const int		speed = 12;
@@ -13,8 +13,10 @@ namespace defaultMage {
 
 class Mage : public RoleParent {
 public:
+	int testHp=10;
 	Mage();
 	~Mage();
+	
 };
 
 #endif // !_MAGE_

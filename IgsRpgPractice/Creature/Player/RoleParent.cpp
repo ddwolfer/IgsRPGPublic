@@ -12,7 +12,7 @@ RoleParent::RoleParent(
 // 戰鬥時選擇角色動作
 //
 E_BattleAction RoleParent::PlayerBattleAction() {
-	cout << "[------------------------]" << endl << endl;
+	cout<< "[-----------------------------------]" << endl << endl;
 	cout << "選擇你的行動:" << endl;
 	cout << "(1) 普通攻擊" << endl;
 	cout << "(2) 技能(還沒做好 所以還是普通攻擊)" << endl;
