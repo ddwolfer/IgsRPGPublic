@@ -24,8 +24,8 @@ EnemyParent* EnemyController::CreateEnemy(E_Enemy EnemyType) {
 EnemyController::EnemyController() {
 	m_enemyFactory = new EnemyFactory();
 }
-EnemyController::~EnemyController()
-{
+EnemyController::~EnemyController() {
+	delete m_enemyFactory;
 }
 
 EnemyFactory::EnemyFactory() {

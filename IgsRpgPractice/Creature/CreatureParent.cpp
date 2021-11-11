@@ -16,7 +16,7 @@ void CreatureParent::OnHit(int getDamage) {
 // 普通攻擊目標
 //
 void CreatureParent::NormalAttackHit(CreatureParent* attackTarget) {
-	cout << m_name << "\t攻擊\t" << attackTarget->m_name <<",\t";
+	cout << m_name << "\t普通攻擊 " << attackTarget->m_name <<",\t";
 	attackTarget->OnHit(m_Atk);
 }
 //

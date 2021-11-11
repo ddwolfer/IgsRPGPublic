@@ -117,10 +117,17 @@ void BattleController::PlayerChooseAction() {
 //
 void BattleController::PlayerChooseAttackTarget() {
 	// 選擇目標
+	m_playerActionTarget = 0;
 	cout << "[-----------------------------------]" << endl << endl;
 	cout << "選擇攻擊對象 1~" << m_enemyVec.size() << endl;
-	cout << ">";
-	cin >> m_playerActionTarget;
+	while (m_playerActionTarget <= 0 || m_playerActionTarget > m_enemyVec.size()) {
+		cout << ">";
+		cin >> m_playerActionTarget;
+		if (m_playerActionTarget > m_enemyVec.size() || m_playerActionTarget <= 0) {
+			cout << "錯誤目標, 重新輸入" << endl;
+		}
+	}
+	
 }
 // 
 // 設定敵人動作

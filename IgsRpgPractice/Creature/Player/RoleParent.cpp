@@ -12,14 +12,21 @@ RoleParent::RoleParent(
 // 戰鬥時選擇角色動作
 //
 E_BattleAction RoleParent::PlayerBattleAction() {
+	int choose;
+	choose = 0;
 	cout<< "[-----------------------------------]" << endl << endl;
 	cout << "選擇你的行動:" << endl;
 	cout << "(1) 普通攻擊" << endl;
 	cout << "(2) 技能(還沒做好 所以還是普通攻擊)" << endl;
 	cout << "(3) 逃跑" << endl;
-	cout << ">";
-	int choose;
-	cin >> choose;
+	while (choose <= 0 || choose > 3) {		
+		cout << ">";
+		cin >> choose;
+		if (choose <= 0 || choose > 3) {
+			cout << "錯誤選項, 重新輸入" << endl;
+		}
+	}
+	
 	return static_cast<E_BattleAction>(choose);
 }
 //

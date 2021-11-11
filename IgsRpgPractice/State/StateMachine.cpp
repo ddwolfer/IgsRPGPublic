@@ -4,13 +4,15 @@
 //
 StateMachine::StateMachine() {
 	m_current = nullptr;
-	pageMachine = this;
 }
 StateMachine::~StateMachine() {}
 //
 // 回傳page用的state machine
 //
 StateMachine* StateMachine::GetPageStateMachine() {
+	if (pageMachine == nullptr) {
+		pageMachine = new StateMachine();
+	}
 	return pageMachine;
 }
 //

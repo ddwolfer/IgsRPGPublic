@@ -20,7 +20,7 @@ public:
 	~EnemyParent();
 
 	static void ResetCountMap();
-	static int AddEnemyInCountMap(string inputName);
+	static int  AddEnemyInCountMap(string inputName);
 
 protected:
 	static map<string, int> m_countEachTypeEnemy;

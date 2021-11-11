@@ -14,8 +14,6 @@ using namespace std;
 class RoleParent : public CreatureParent
 {
 public:
-	//virtual void PlayerNormalAttack() = 0;
-	//virtual void PlayerBattleEscape() = 0;
 	//
 	// Εγ₯ά¨€¦βͺ¬ΊA
 	//

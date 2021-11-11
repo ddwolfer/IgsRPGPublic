@@ -24,7 +24,6 @@ class EnemyController
 public:
 	EnemyController();
 	~EnemyController();
-
 	EnemyParent* CreateEnemy(E_Enemy EnemyType);
 
 private:

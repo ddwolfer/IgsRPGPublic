@@ -7,21 +7,14 @@ int main()
 {
 	srand(time(0));
 
-	StateMachine*		pageStateMachine= new StateMachine();
+	StateMachine*		pageStateMachine= StateMachine::GetPageStateMachine();
 
-	ExitState*			exitState		= new ExitState();
-	MenuState*			menuState		= new MenuState();
-	SelectRole*			selectRole		= new SelectRole();
-	PlayerStep*			playerStep		= new PlayerStep();
-	PlayerStatus*		playerStatus	= new PlayerStatus();
-	BattlePhase*		battleState		= new BattlePhase();
-
-	pageStateMachine->AddState(E_GamePage::exit, exitState);
-	pageStateMachine->AddState(E_GamePage::mainMenu, menuState);
-	pageStateMachine->AddState(E_GamePage::selectRole, selectRole);
-	pageStateMachine->AddState(E_GamePage::playerStep, playerStep);
-	pageStateMachine->AddState(E_GamePage::playerStatus, playerStatus);
-	pageStateMachine->AddState(E_GamePage::battle, battleState);
+	pageStateMachine->AddState(E_GamePage::exit, new ExitState());
+	pageStateMachine->AddState(E_GamePage::mainMenu, new MenuState());
+	pageStateMachine->AddState(E_GamePage::selectRole, new SelectRole());
+	pageStateMachine->AddState(E_GamePage::playerStep, new PlayerStep());
+	pageStateMachine->AddState(E_GamePage::playerStatus, new PlayerStatus());
+	pageStateMachine->AddState(E_GamePage::battle, new BattlePhase());
 
 	pageStateMachine->Change(E_GamePage::mainMenu);
 

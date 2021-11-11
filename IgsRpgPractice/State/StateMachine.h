@@ -23,11 +23,11 @@ enum class E_GamePage {
 class IState
 {
 public:
-	// 每次做的事情
+	// 每一輪 該State要做的事
 	virtual void Update()=0;
-	// 鍵盤/搖桿輸入 cin  
+	// State 結束後的輸入 & 轉換State
 	virtual void HandleInput() = 0;
-	// 首次呼叫定義 (比較少用到)
+	// 首次呼叫定義
 	virtual void Enter() = 0;
 	// 結束該State要做什麼事情
 	virtual void Exit() = 0;
@@ -49,44 +49,25 @@ public:
 class StateMachine
 {
 public:
-	//
 	// 儲存State class用的map
-	//
 	map<E_GamePage, EmptyState*> m_stateMap;
-	//
 	// 目前所在的狀態State
-	//
 	EmptyState *m_current;
-	//
 	// 加入新狀態
-	//
 	void AddState(E_GamePage pageID, EmptyState* state);
-	//
 	// 改變狀態
-	//
 	void Change(E_GamePage pageID);
-	//
 	// 顯示該狀態內容
-	//
 	void Update();
-	//
 	// 執行該狀態的輸入
-	//
 	void HandleInput();
-	//
 	// 回傳page用的state machine
-	//
 	static StateMachine* GetPageStateMachine();
-	//
+private:
 	// 建構解構
-	//
 	StateMachine();
 	~StateMachine();
-
-private:
-	//
 	// page用的state machine
-	//
 	static StateMachine* pageMachine;
 };
 

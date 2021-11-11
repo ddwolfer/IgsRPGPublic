@@ -5,7 +5,7 @@
 
 namespace defaultMage {
 	const string	name = "ªk®v";
-	const int		hpMax = 1;
+	const int		hpMax = 60;
 	const int		manaMax = 75;
 	const int		atk = 10;
 	const int		speed = 12;
