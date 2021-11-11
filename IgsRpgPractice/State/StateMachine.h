@@ -38,10 +38,10 @@ public:
 class EmptyState : public IState
 {
 public:
-	void Update() {}
-	void HandleInput() {}
-	void Enter() {}
-	void Exit() {}
+	virtual void Update() {}
+	virtual void HandleInput() {}
+	virtual void Enter() {}
+	virtual void Exit() {}
 };
 //
 // ª¬ºA¾÷class

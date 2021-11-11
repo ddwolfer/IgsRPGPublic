@@ -10,11 +10,16 @@ BattleController::BattleController() {
 	m_enemyCount = (int)(rand() % 3) + 1;
 	// 隨機 史萊姆or哥布林
 	for (size_t idx = 0; idx < m_enemyCount; idx++) {
-		m_enemyVec.push_back(m_enemyController.CreateEnemy(static_cast<E_Enemy>((int)(rand() % 2))));
+		m_enemyVec.push_back(
+			m_enemyController.CreateEnemy(static_cast<E_Enemy>((int)(rand() % 2)))
+		);
 	}
 	m_battleEndFlag = false;
 	m_playerActionTarget = 0;
 }
+//
+// 初始化Controller
+//
 void BattleController::InitBattleController() {
 	delete m_battleController;
 	m_battleController = new BattleController();
@@ -66,7 +71,8 @@ void BattleController::SortBattleAction() {
 	//加入玩家
 	m_attackSort.push_back(PlayerController::GetPlayer());
 	//排序
-	sort(m_attackSort.begin(), m_attackSort.end(), [](CreatureParent* Target1, CreatureParent* Target2) {
+	sort(m_attackSort.begin(), m_attackSort.end(), 
+		[](CreatureParent* Target1, CreatureParent* Target2) {
 		return Target1->GetSpeed() > Target2->GetSpeed();
 		});
 
